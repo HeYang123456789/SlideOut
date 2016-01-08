@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CanvasViewController">
+            <connections>
+                <outlet property="brush_rubber" destination="Upv-gZ-6cS" id="heg-gH-Mal"/>
+                <outlet property="canvasView" destination="ar8-BQ-kb2" id="Ydo-N8-fBg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ar8-BQ-kb2" customClass="CancasView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="md6-fC-JcN">
+                    <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="C0f-Dv-V5f"/>
+                    </constraints>
+                    <items>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="uAr-XH-Lqg"/>
+                        <barButtonItem image="fa-save (alias)" id="bAM-jJ-5qD"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="wT4-TX-NRd"/>
+                        <barButtonItem image="fa-folder-open-o" id="hOL-9L-UfF"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="Tnw-VA-A70"/>
+                        <barButtonItem image="albumn" id="uUu-zu-FFY">
+                            <connections>
+                                <action selector="albumn:" destination="-1" id="oj4-Qg-tsb"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="UuY-c2-JpP"/>
+                        <barButtonItem image="fa-trash-o" id="g5W-fM-SPj">
+                            <connections>
+                                <action selector="delete:" destination="-1" id="Qpl-nM-TJT"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="toT-CD-5TP"/>
+                        <barButtonItem image="rubber" id="Upv-gZ-6cS">
+                            <connections>
+                                <action selector="rubber:" destination="-1" id="QvG-yl-Pj0"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="0pg-s0-gIv"/>
+                        <barButtonItem image="fa-mail-reply-all (alias)" id="hjE-g4-0y3">
+                            <connections>
+                                <action selector="replayAll:" destination="-1" id="7dE-xM-Pfh"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="0GT-kJ-QlN"/>
+                        <barButtonItem image="fa-mail-reply (alias)" id="t57-73-joS">
+                            <connections>
+                                <action selector="replay:" destination="-1" id="ztl-aS-d79"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="spf-xp-etX"/>
+                        <barButtonItem image="fa-mail-forward (alias)" id="kNn-eK-jup">
+                            <connections>
+                                <action selector="forward:" destination="-1" id="DJQ-WR-HdF"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="otn-zp-Que"/>
+                        <barButtonItem image="palette" id="5ku-UV-ooV">
+                            <connections>
+                                <action selector="paletteClick:" destination="-1" id="lR6-Zu-S3f"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="Mbk-md-O5I"/>
+                    </items>
+                </toolbar>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ar8-BQ-kb2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1EY-yg-R5i"/>
+                <constraint firstAttribute="trailing" secondItem="md6-fC-JcN" secondAttribute="trailing" id="1ua-6w-zfg"/>
+                <constraint firstAttribute="bottom" secondItem="md6-fC-JcN" secondAttribute="bottom" id="92y-5X-B7g"/>
+                <constraint firstItem="md6-fC-JcN" firstAttribute="top" secondItem="ar8-BQ-kb2" secondAttribute="bottom" id="VgL-cs-CSt"/>
+                <constraint firstItem="ar8-BQ-kb2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="gWJ-Aa-wBs"/>
+                <constraint firstAttribute="trailing" secondItem="ar8-BQ-kb2" secondAttribute="trailing" id="tjC-Op-xsp"/>
+                <constraint firstItem="md6-fC-JcN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="wQz-i0-YPI"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="272.5" y="390.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="albumn" width="22" height="22"/>
+        <image name="fa-folder-open-o" width="25" height="19"/>
+        <image name="fa-mail-forward (alias)" width="23" height="21"/>
+        <image name="fa-mail-reply (alias)" width="23" height="21"/>
+        <image name="fa-mail-reply-all (alias)" width="23" height="21"/>
+        <image name="fa-save (alias)" width="21" height="20"/>
+        <image name="fa-trash-o" width="19" height="20"/>
+        <image name="palette" width="22" height="20"/>
+        <image name="rubber" width="20" height="22"/>
+    </resources>
+</document>
